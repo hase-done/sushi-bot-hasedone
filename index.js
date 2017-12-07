@@ -46,7 +46,7 @@ server.post('/webhook', line.middleware(line_config), (req, res, next) => {
                         } else {
                             message = {
                                 type: "text",
-                                text: `毎度！ご注文は？`
+                                text: `毎度！ご注文は？　松、竹、梅で選んでくださいまし`
                             }
                         }
                         return bot.replyMessage(event.replyToken, message);
